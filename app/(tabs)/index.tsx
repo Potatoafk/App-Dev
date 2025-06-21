@@ -25,6 +25,11 @@ export default function HomeScreen() {
             NAGANA NAAAAA ARGGGHHHHHHH
          </ThemedText>
 
+         <ThemedText>
+            This is a starter app for React Native development with Expo. It includes a basic tab
+            navigation setup and a few example screens to help you get started.
+         </ThemedText>
+
          <ThemedView style={styles.stepContainer}>
             <ThemedText type="subtitle">Step 1: Try it</ThemedText>
             <ThemedText>
