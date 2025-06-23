@@ -1,5 +1,5 @@
 import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
+import { Platform, StyleSheet, View } from 'react-native';
 
 import { Collapsible } from '@/components/Collapsible';
 import { ExternalLink } from '@/components/ExternalLink';
@@ -21,7 +21,10 @@ export default function TabTwoScreen() {
             />
          }>
          <ThemedView style={styles.titleContainer}>
-            <ThemedText type="title">Explore</ThemedText>
+            <ThemedText type="title" style={styles.text} >Explore</ThemedText>
+            <View>
+               <ThemedText type="subtitle" style={styles.text}>Explore the features of this app</ThemedText>
+            </View>
          </ThemedView>
          <ThemedText>This app includes example code to help you get started.</ThemedText>
          <Collapsible title="File-based routing">
@@ -104,7 +107,17 @@ const styles = StyleSheet.create({
       position: 'absolute',
    },
    titleContainer: {
-      flexDirection: 'row',
+      flexDirection: 'column',
+      backgroundColor: '#D0D0D0',
+      padding: 16,
+      borderRadius: 8,
+      alignItems: 'center',
+      justifyContent: 'center',
       gap: 8,
    },
+   text: {
+      color: '#000',
+      textAlign: 'center',
+   },
+
 });

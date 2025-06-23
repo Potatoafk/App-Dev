@@ -2,7 +2,10 @@ import { Collapsible } from '@/components/Collapsible';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
-import { StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
+
+
+import BlueButton from '@/components/BlueButton';
 
 
 const SettingsScreen = () => {
@@ -32,6 +35,12 @@ const SettingsScreen = () => {
                Here you can adjust your preferences, manage your account, and more.
             </ThemedText>
          </ThemedView>
+
+
+         <View>
+            <BlueButton/>
+         </View>
+
       </ParallaxScrollView>
    );
 }
